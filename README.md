@@ -22,18 +22,16 @@ The dataset was synthetically generated using ChatGPT prompts and contains 100,0
 • Cleaning and modeling of 100,000+ Ola ride records
 • SQL queries to analyze ride metrics, cancellations, and performance
 • Interactive Power BI dashboards featuring :
-```
     • Ride Volume Over Time
     • Booking Status Breakdown
     • Revenue by Payment Method
     • Top 5 Customers by Total Booking Value
     • Driver & Customer Rating Analysis
     • Cancellation Reasons (Customer vs Driver)
-```
 •Insights into ride demand trends, customer satisfaction, and vehicle performance
 
 ### 5. Example SQL Queries
-_________________________________________________________________________________________________
+```
 -- Retrieve all successful bookings
 SELECT * FROM bookings WHERE Booking_Status = 'Success';
 
@@ -46,7 +44,7 @@ GROUP BY Vehicle_Type;
 SELECT COUNT(*) 
 FROM bookings 
 WHERE Booking_Status = 'cancelled by Customer';
-_________________________________________________________________________________________________
+```
 
 ### 6. Power BI Dashboard Insights
 • Ride Volume Over Time: Identify peak hours and weekend trends
